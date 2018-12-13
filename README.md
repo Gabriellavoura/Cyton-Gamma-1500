@@ -4,7 +4,9 @@ Documntation for environment for Cyton Gamma 1500 by Robai with ROS and Gazebo t
 ## Dependencies:
 * Windows 10 - ver 1803.
 * WSL Ubuntu: 18.04 LTS Bionic Beaver.
-* ROS Melodic Morenia. 
+* ROS Melodic Morenia.
+* Xming.
+* Gazebo ver 9.
 
 ## Step 1 - Configure WSL on Windows 10.
 
@@ -102,9 +104,47 @@ To install this tool and other dependencies for building ROS packages, run:
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
 
-### 2.7 Go to Plaground
+### 2.7 Go to Playground
 
-Now, to test your installation, please proceed to the [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials).
+Complete Step 3 and Now, to test your installation, please proceed to the [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials).
 
 -----------------------------------------------------------------------------------------------------------
 For more details: [Official ROS Page](http://wiki.ros.org/melodic/Installation/Ubuntu)
+
+## Step 3 - Install Xming.
+
+To run applications with graphical output, you need to install an X Server on Windows. [Xming](http://www.straightrunning.com/XmingNotes/)
+
+After you have installed Xming, you also need to configure WSL to use it. To do so modify you .bashrc as follows
+```
+echo "export DISPLAY=:0" >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Optional 3.1 - Run turtle_sim
+
+The popular turtle_sim tutorial works fine WSL as well.
+
+Make sure you have an X Server installed, configured and running as described above.
+1* Start a new bash prompt and run `roscore`.
+2* Start a second bash prompt and run `rosrun turtlesim turtle_teleop_key`.
+3* Start a third bash prompt and run `rosrun turtlesim turtlesim_node`. 
+You can control the turtle by using the arrow keys by going back to the second prompt.
+
+[Image: Turtle Sim Output](https://janbernloehr.de/assets/images/RosOnWsl/turtle1.PNG)
+
+--------------------------------------------------------------------------------------------------------------
+
+## Step 4 - Install Gazebo.
+
+In bash:
+```
+curl -sSL http://get.gazebosim.org | sh
+```
+Open Xming and Run in bash:
+
+```
+gazebo
+```
+--------------------------------------------------------------------------------------------------------------
+For more details [Gazebo Installation Guide](http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install).
