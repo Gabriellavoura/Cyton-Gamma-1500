@@ -1,0 +1,8 @@
+prefix=/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/install
+
+Name: cyton_gamma_300_controllers
+Description: Description of cyton_gamma_300_controllers
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/install/lib 
+Requires: 

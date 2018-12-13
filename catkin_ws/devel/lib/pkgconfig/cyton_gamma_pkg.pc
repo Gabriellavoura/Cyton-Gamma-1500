@@ -1,0 +1,8 @@
+prefix=/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/devel
+
+Name: cyton_gamma_pkg
+Description: Description of cyton_gamma_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/devel/lib 
+Requires: 

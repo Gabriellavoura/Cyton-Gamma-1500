@@ -1,0 +1,8 @@
+prefix=/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/install
+
+Name: gamma_1500_moveit_config
+Description: Description of gamma_1500_moveit_config
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/install/lib 
+Requires: 

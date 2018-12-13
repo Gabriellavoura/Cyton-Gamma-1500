@@ -1,0 +1,8 @@
+prefix=/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/install
+
+Name: dynamixel_tutorials
+Description: Description of dynamixel_tutorials
+Version: 0.4.0
+Cflags: 
+Libs: -L/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/install/lib 
+Requires: dynamixel_controllers

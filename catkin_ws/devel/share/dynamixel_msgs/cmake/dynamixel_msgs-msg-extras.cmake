@@ -1,0 +1,2 @@
+set(dynamixel_msgs_MESSAGE_FILES "/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/src/cyton_gamma_300-1500_operation_and_simulation/dynamixel_motor-master/dynamixel_msgs/msg/JointState.msg;/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/src/cyton_gamma_300-1500_operation_and_simulation/dynamixel_motor-master/dynamixel_msgs/msg/MotorState.msg;/home/gabriel/Cyton_ROS/Cyton-Gamma-1500/catkin_ws/src/cyton_gamma_300-1500_operation_and_simulation/dynamixel_motor-master/dynamixel_msgs/msg/MotorStateList.msg")
+set(dynamixel_msgs_SERVICE_FILES "")
